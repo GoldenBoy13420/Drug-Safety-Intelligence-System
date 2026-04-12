@@ -1,0 +1,9 @@
+# Ignore data
+Data/
+
+# Ignore notebooks checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
