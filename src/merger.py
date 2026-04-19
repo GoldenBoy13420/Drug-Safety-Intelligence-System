@@ -27,3 +27,14 @@ def group_table(df, name):
     
     return grouped
 
+
+def merge_all(demo, tables):
+    df = demo.copy()
+    
+    for t in tables:
+        df = df.merge(t, on="primaryid", how="left")
+    
+    print("Merging done")
+    
+    return df
+
