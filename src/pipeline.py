@@ -27,7 +27,7 @@ def run_pipeline():
     indi_g = group_table(indi, "indi")
     
      #Step 4: Merging
-    final_df = merge_all(demo, [drug_g, reac_g])
+    final_df = merge_all(demo, [drug_g, reac_g, outc_g, rpsr_g, ther_g, indi_g ])
     
 
     
